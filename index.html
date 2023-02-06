@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto técnico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="vista/css/style.css">
+</head>
+<body>
+    <!--fondo-->
+    <div class="bg"></div>
+    <div class="star-field">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+
+    <!--fondo-->
+    <img src="vista/img/planeta.png" class="planeta">
+    <img src="vista/img/luna.png" class="luna">
+
+
+
+
+
+    <div class="myBuscador">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+        </svg>
+        <div class="myBuscadorHead">
+            <form class="buscar">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Buscar por nombre o pais" id="nombre">
+                <select class="form-select form-select-lg mb-3" id="destino">
+                    <option selected value="">Destino</option>
+                    <option value="Luna">Luna</option>
+                    <option value="Saturno">Saturno</option>
+                    <option value="Marte">Marte</option>
+                    <option value="Venus">Venus</option>
+                    <option value="Jupiter">Jupiter</option>
+                </select>
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">BUSCAR</button>
+                
+            </div>
+            </form>
+        </div>
+        <div class="myBuscadorBody"></div>
+        <div class="myBuscadoFooter"></div>
+    </div>
+
+
+
+
+
+
+
+
+        <div id="alert">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                
+            </div>
+        </div>
+
+        <div class="my-naves">
+            <!--aqui se pintan las naves en el espacio-->
+        </div>
+
+<!--________________________________________________________________________________________________-->
+    <div class="formularioNV">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg>
+     
+        <h1>Crear naves con COMBUSTIBLE</h1>
+        <form class="formNV">
+            
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre1" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Empuje</label>
+                <input type="text" class="form-control" id="empuje1" placeholder="Empuje">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Destino</label>
+                <select class="form-select form-select-lg mb-3" id="destino1">
+                    <option selected value="">Seleccionar destino</option>
+                    <option value="Luna">Luna</option>
+                    <option value="Saturno">Saturno</option>
+                    <option value="Marte">Marte</option>
+                    <option value="Venus">Venus</option>
+                    <option value="Jupiter">Jupiter</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Pais</label>
+                <input type="text" class="form-control" id="pais1" placeholder="Pais">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Combustible</label>
+                <input type="text" class="form-control" id="combustible1" placeholder="Combustible">
+            </div>
+            <button type="submit" class="btn btn-boton3" value="nave1" id="nave1">Guardar</button>
+
+        </form>
+    </div>
+<!--________________________________________________________________________________________________-->
+<!--________________________________________________________________________________________________-->
+    <div class="formularioNA">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+          </svg>
+ 
+    <h1>Crear naves con ALTURA</h1>
+    <form class="formNA">
+        
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre2" placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Empuje</label>
+            <input type="text" class="form-control" id="empuje2" placeholder="Empuje">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Destino</label>
+            <select class="form-select form-select-lg mb-3" id="destino2">
+                <option selected value="">Seleccionar destino</option>
+                <option value="Luna">Luna</option>
+                <option value="Saturno">Saturno</option>
+                <option value="Marte">Marte</option>
+                <option value="Venus">Venus</option>
+                <option value="Jupiter">Jupiter</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Pais</label>
+            <input type="text" class="form-control" id="pais2" placeholder="Pais">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Alturas</label>
+            <input type="text" class="form-control" id="altura" placeholder="Altura">
+        </div>
+        <button type="submit" class="btn btn-boton3" value="nave2" id="nave2">Guardar</button>
+
+    </form>
+</div>
+<!--________________________________________________________________________________________________-->
+<!--________________________________________________________________________________________________-->
+
+<div class="formularioNP">
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+      </svg>
+
+<h1>Crear naves con PESO</h1>
+<form class="formNP">
+    
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre3" placeholder="Nombre">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Empuje</label>
+        <input type="text" class="form-control" id="empuje3" placeholder="Empuje">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Destino</label>
+        <select class="form-select form-select-lg mb-3" id="destino3">
+            <option selected value="">Seleccionar destino</option>
+            <option value="Luna">Luna</option>
+            <option value="Saturno">Saturno</option>
+            <option value="Marte">Marte</option>
+            <option value="Venus">Venus</option>
+            <option value="Jupiter">Jupiter</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Pais</label>
+        <input type="text" class="form-control" id="pais3" placeholder="Pais">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Peso</label>
+        <input type="text" class="form-control" id="peso" placeholder="Peso">
+    </div>
+    <button type="submit" class="btn btn-boton3" value="nave3" id="nave3">Guardar</button>
+
+</form>
+</div>
+<!--________________________________________________________________________________________________-->
+<!--________________________________________________________________________________________________-->
+
+
+
+
+<div class="formularioNT">
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+      </svg>
+
+<h1>Crear naves con TIPO</h1>
+<form class="formNT">
+    
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre4" placeholder="Nombre">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Empuje</label>
+        <input type="text" class="form-control" id="empuje4" placeholder="Empuje">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Destino</label>
+        <select class="form-select form-select-lg mb-3" id="destino4">
+            <option selected value="">Seleccionar destino</option>
+            <option value="Luna">Luna</option>
+            <option value="Saturno">Saturno</option>
+            <option value="Marte">Marte</option>
+            <option value="Venus">Venus</option>
+            <option value="Jupiter">Jupiter</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Pais</label>
+        <input type="text" class="form-control" id="pais4" placeholder="Pais">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Tipo</label>
+        <input type="text" class="form-control" id="tipo" placeholder="Tipo">
+    </div>
+    <button type="submit" class="btn btn-boton3" value="nave4" id="nave4">Guardar</button>
+
+</form>
+</div>
+<!--________________________________________________________________________________________________-->
+<!--________________________________________________________________________________________________-->
+
+
+
+
+<div class="barra">
+
+
+    <div class="barra0">
+        <h3>Crear naves</h3>
+        <div class="barra0-naves">
+            <button class="btn btn-boton2" id="nv">Nave Combustible</button>
+            <button class="btn btn-boton2" id="na">Nave altura</button>
+            <button class="btn btn-boton2" id="np">Nave peso</button>
+            <button class="btn btn-boton2" id="nt">Nave tipo</button>
+        </div>
+    </div>
+
+
+    <div class="barra1">
+        <div>
+            <h3>Buscar naves</h3>
+                <button type="button" class="btn btn-boton2" id="botonBuscador">Buscar</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="barra2">
+        <div class="barra2-izq">
+            <button class="btn btn-boton active" id="b-todo">Todo</button>
+            <button class="btn btn-boton" id="b-lanza">Lanzadera</button>
+            <button class="btn btn-boton" id="b-n-tripu">No tripuladas</button>
+            <button class="btn btn-boton" id="b-tripu">Tripuladas</button>
+
+         </div> 
+
+       <div class="barra2-der">
+          <!--se muestra las naves-->
+       </div> 
+
+    </div>
+
+
+</div>
+
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="controlador.js"></script>
+</body>
+</html>
